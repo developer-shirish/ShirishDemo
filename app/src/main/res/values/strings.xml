@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Shirish Demo</string>
+
+    <string name="demo_1">Android open camera &amp; capture image.</string>
+    <string name="demo_2">Get data from server using "Retrofit".</string>
+    <string name="demo_3">Upload image to server using PHP, MySql.</string>
+</resources>
