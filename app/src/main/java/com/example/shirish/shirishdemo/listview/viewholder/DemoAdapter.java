@@ -18,6 +18,7 @@ import java.util.ArrayList;
 public class DemoAdapter extends BaseAdapter {
     private Context context;
     private ArrayList<PoJo> poJoArrayList;
+    private LayoutInflater inflater;
 
     public DemoAdapter(Context context, ArrayList<PoJo> poJos){
         this.context = context;
@@ -42,10 +43,11 @@ public class DemoAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup viewGroup) {
         ViewHolder holder;
-        LayoutInflater mInflater = null;
+
+        inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
         if (convertView == null){
-            convertView = mInflater.inflate(R.layout.list_item_1, null);
+            convertView = inflater.inflate(R.layout.list_item_1,null);
 
             holder = new ViewHolder();
             holder.name = (TextView) convertView.findViewById(R.id.text_name);
