@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.example.shirish.shirishdemo.image.upload.ImageUpload;
+import com.example.shirish.shirishdemo.listview.viewholder.ActCustom;
 import com.example.shirish.shirishdemo.open.camera.CameraActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -25,5 +26,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void uploadImageToServer(View v){
         startActivity(new Intent(MainActivity.this, ImageUpload.class));
+    }
+
+    public void customListview(View v){
+        startActivity(new Intent(MainActivity.this, ActCustom.class));
+        finish();
     }
 }
