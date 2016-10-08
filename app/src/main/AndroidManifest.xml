@@ -3,7 +3,7 @@
     package="com.example.shirish.shirishdemo">
 
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -19,7 +19,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".open.camera.CameraActivity" />
-        <activity android:name=".image.upload.ImageUpload"></activity>
+        <activity android:name=".image.upload.ImageUpload" />
+        <activity android:name=".listview.viewholder.ActCustom"></activity>
     </application>
 
 </manifest>
