@@ -20,7 +20,8 @@
         </activity>
         <activity android:name=".open.camera.CameraActivity" />
         <activity android:name=".image.upload.ImageUpload" />
-        <activity android:name=".listview.viewholder.ActCustom"></activity>
+        <activity android:name=".listview.viewholder.ActCustom" />
+        <activity android:name=".gps.dialog.GPSActivity"></activity>
     </application>
 
 </manifest>
