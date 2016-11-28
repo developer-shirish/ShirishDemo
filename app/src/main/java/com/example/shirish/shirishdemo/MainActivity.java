@@ -24,10 +24,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(MainActivity.this, CameraActivity.class));
     }
 
+    //demo 2
     public void uploadImageToServer(View v){
         startActivity(new Intent(MainActivity.this, ImageUpload.class));
     }
 
+    //demo 3
     public void customListview(View v){
         startActivity(new Intent(MainActivity.this, ActCustom.class));
         finish();
